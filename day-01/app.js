@@ -152,3 +152,28 @@ console.log(copyNumbers); // [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(numbers === copyNumbers); // false
 */
 // note: when we use spread operater , spread opareter return new value
+
+// Destructuring use cases in JavaScript :
+// how to swap values with destructuring
+// let sad = "😔";
+// let happy = "🙂";
+// [happy, sad] = [sad, happy];
+// console.log(happy); // "😔"
+// console.log(sad); // "🙂"
+
+// let num1 = 1;
+// let num2 = 2;
+// [num2, num1] = [num1, num2];
+// console.log(num1); // 2
+// console.log(num2); // 1
+
+// how to merge arrays
+// const emotion = ["🙂", "😔"];
+// const veggies = ["🥦", "🥒", "🌽", "🥕"];
+
+// const emotionVeggies = [emotion, veggies];
+// console.log(emotionVeggies); // (2) [Array(2), Array(4)]
+// const emotionVeggies2 = [...emotion, ...veggies];
+// console.log(emotionVeggies2); // ['🙂', '😔', '🥦', '🥒', '🌽', '🥕']
+
+
