@@ -93,3 +93,7 @@ console.log(anik, asraful, rayhan); // Anik Asraful Rayhan
 
 const [anik, asraful, rayhan] = friends;
 console.log(anik, asraful, rayhan); // Anik Asraful Rayhan
+
+// Assgin a default value :
+const [name1, name2 = "mushrum"] = ["tomato"];
+console.log(name1, name2);
