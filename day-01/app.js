@@ -114,6 +114,7 @@ console.log(num8);
 */
 
 // Nested Array :
+/*
 const numbers = [1, 2, 3, 4, 5, [6, 7, 8, 9]];
 // const six = numbers[5];
 // console.log(six); //  [6, 7, 8, 9]
@@ -127,3 +128,15 @@ console.log(three);
 console.log(six);
 console.log(two);
 console.log(nine);
+*/
+
+// Rest Parameter:
+
+// Note : rest parameter always use last element
+/*
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+const [num1, num2, ...rest] = numbers;
+console.log(num1); // 1
+console.log(num2); // 2
+console.log(rest); // [3, 4, 5, 6, 7, 8]
+*/
