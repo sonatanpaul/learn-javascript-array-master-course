@@ -1,4 +1,4 @@
-console.log("Hello world");
+// console.log("Hello world");
 
 // How to create Array in Javascript
 /*
@@ -81,8 +81,8 @@ console.log(Array.isArray([])); // True
 
 // Array Destructuring in JavaScript
 
-const friends = ["Anik", "Asraful", "Rayhan"];
-console.log(friends); // ['Anik', 'Asraful', 'Rayhan']
+// const friends = ["Anik", "Asraful", "Rayhan"];
+// console.log(friends); // ['Anik', 'Asraful', 'Rayhan']
 
 /*
 const anik = friends[0];
@@ -175,5 +175,25 @@ console.log(numbers === copyNumbers); // false
 // console.log(emotionVeggies); // (2) [Array(2), Array(4)]
 // const emotionVeggies2 = [...emotion, ...veggies];
 // console.log(emotionVeggies2); // ['🙂', '😔', '🥦', '🥒', '🌽', '🥕']
+
+// Array Length Property :
+
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = new Array(5);
+
+// console.log(array1); // [1, 2, 3, 4, 5]
+// console.log(array2); //  [empty × 5]
+
+// array maximum length  2 ** 32; // 4294967296
+// array lenght can't negetive number
+
+// const array3 = [1, 2, 3, 4, 5];
+// console.log(array3.length); // 5
+// array3.length = 2;
+// console.log(array3.length); // 2
+// console.log(array3); //  [1, 2]
+// array3.length = 0;
+// console.log(array3.length); // 0
+// console.log(array3); // []
 
 
