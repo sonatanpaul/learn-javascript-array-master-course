@@ -243,3 +243,13 @@ console.log(replace); // [0, 0, 0, 0, 0]
 const replaceAgain = numbers.fill(1, 2, 4);
 console.log(replaceAgain); // [0, 0, 1, 1, 0]
 */
+
+// includes () method :
+
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers); // [1, 2, 3, 4, 5, 6]
+const two = numbers.includes(2);
+console.log(two); // true
+const ten = numbers.includes(10);
+console.log(ten); // false
+
