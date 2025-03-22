@@ -274,3 +274,11 @@ console.log(bikash); //  2
 */
 // Note : if array element not exsit then return -1
 
+// reverse () method :
+/*
+const names = ["Anik", "Rayhan", "Bikash"];
+console.log(names); // ['Anik', 'Rayhan', 'Bikash']
+const reverseName = names.reverse();
+console.log(reverseName); // ['Bikash', 'Rayhan', 'Anik']
+*/
+// Note : reverse () mutable method
