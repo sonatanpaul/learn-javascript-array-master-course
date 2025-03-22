@@ -17,3 +17,15 @@ const blankElement = new Array(10);
 console.log(blankElement); // (10) [empty × 10]
 */
 
+// Get Array Element :
+// access rules
+// Array[index]
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// how to check number of element in numbers
+console.log(numbers.length); // 6
+// Note : javascript index always start 0
+console.log(numbers[0]); // 1
+console.log(numbers[3]); // 4
+console.log(numbers[numbers.length - 1]); // 6
