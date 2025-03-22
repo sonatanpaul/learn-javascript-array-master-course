@@ -245,11 +245,32 @@ console.log(replaceAgain); // [0, 0, 1, 1, 0]
 */
 
 // includes () method :
-
+/*
 const numbers = [1, 2, 3, 4, 5, 6];
 console.log(numbers); // [1, 2, 3, 4, 5, 6]
 const two = numbers.includes(2);
 console.log(two); // true
 const ten = numbers.includes(10);
 console.log(ten); // false
+
+*/
+
+// indexof and lastIndexof :
+/*
+const names = ["anik", "rayhan", "asraful"];
+console.log(names); // ['anik', 'rayhan', 'asraful']
+const rayhan = names.indexOf("rayhan");
+console.log(rayhan); // 1
+const akash = names.indexOf("akash");
+console.log(akash); // -1
+*/
+
+/*
+// lastIndexOf :
+const friends = ["Akash", "Bikash", "Bikash", "Asraful"];
+console.log(friends); // ['Akash', 'Bikash', 'Asraful']
+const bikash = friends.lastIndexOf("Bikash");
+console.log(bikash); //  2
+*/
+// Note : if array element not exsit then return -1
 
