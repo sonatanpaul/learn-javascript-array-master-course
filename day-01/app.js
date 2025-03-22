@@ -89,11 +89,24 @@ const anik = friends[0];
 const asraful = friends[1];
 const rayhan = friends[2];
 console.log(anik, asraful, rayhan); // Anik Asraful Rayhan
-*/
+
 
 const [anik, asraful, rayhan] = friends;
 console.log(anik, asraful, rayhan); // Anik Asraful Rayhan
+*/
 
+/*
 // Assgin a default value :
 const [name1, name2 = "mushrum"] = ["tomato"];
 console.log(name1, name2);
+*/
+
+// Skip a value in Array Destructuring :
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const [, num2, , , num5, num6, , num8] = numbers;
+console.log(num2);
+console.log(num5);
+console.log(num6);
+console.log(num8);
