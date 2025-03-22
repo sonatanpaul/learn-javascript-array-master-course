@@ -178,22 +178,44 @@ console.log(numbers === copyNumbers); // false
 
 // Array Length Property :
 
-// const array1 = [1, 2, 3, 4, 5];
-// const array2 = new Array(5);
+/*
+const array1 = [1, 2, 3, 4, 5];
+const array2 = new Array(5);
 
-// console.log(array1); // [1, 2, 3, 4, 5]
-// console.log(array2); //  [empty × 5]
+console.log(array1); // [1, 2, 3, 4, 5]
+console.log(array2); //  [empty × 5]
 
 // array maximum length  2 ** 32; // 4294967296
 // array lenght can't negetive number
 
-// const array3 = [1, 2, 3, 4, 5];
-// console.log(array3.length); // 5
-// array3.length = 2;
-// console.log(array3.length); // 2
-// console.log(array3); //  [1, 2]
-// array3.length = 0;
-// console.log(array3.length); // 0
-// console.log(array3); // []
+const array3 = [1, 2, 3, 4, 5];
+console.log(array3.length); // 5
+array3.length = 2;
+console.log(array3.length); // 2
+console.log(array3); //  [1, 2]
+array3.length = 0;
+console.log(array3.length); // 0
+console.log(array3); // []
 
+
+// Non-Modifiable Length Property
+{
+    const ages = [21, 12, 73, 41, 67];
+    Object.defineProperty(ages, "length", { writable: false });
+    ages[5] = 6; 
+    ages.push(5); 
+  }
+*/
+
+// concat () method :
+/*
+const num1 = [1, 2, 3, 4, 5];
+const num2 = [6, 7, 8, 9, 10];
+const num3 = [11, 12, 13, 14, 15];
+
+const merge = num1.concat(num2);
+console.log(merge); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const mergeAgain = num1.concat(num2, num3);
+console.log(mergeAgain); //  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+*/
 
