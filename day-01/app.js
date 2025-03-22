@@ -233,3 +233,13 @@ console.log(joinAgain); // 1$ 2$ 3$ 4$ 5$ 6
 console.log([].join("$")); //  ''
 */
 
+// fill () method :
+// stracture
+// fill(replace, source, target)
+/*
+const numbers = [1, 2, 3, 4, 5];
+const replace = numbers.fill(0);
+console.log(replace); // [0, 0, 0, 0, 0]
+const replaceAgain = numbers.fill(1, 2, 4);
+console.log(replaceAgain); // [0, 0, 1, 1, 0]
+*/
