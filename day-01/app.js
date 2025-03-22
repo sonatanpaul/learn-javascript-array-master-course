@@ -60,3 +60,21 @@ console.log(numbers); // [2, 3, 4, 5]
 
 */
 
+/*
+// Copy OR Clone
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers); //  [1, 2, 3, 4, 5, 6]
+const numbersCopy = numbers.slice();
+console.log(numbersCopy); //  [1, 2, 3, 4, 5, 6]
+console.log(numbers === numbersCopy); //  false 
+*/
+
+/*
+// Determine :
+// How to check array is Array or Not
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(Array.isArray(numbers)); // True
+console.log(Array.isArray("Sonatan")); // false
+console.log(Array.isArray(10)); // false
+console.log(Array.isArray([])); // True
+*/
