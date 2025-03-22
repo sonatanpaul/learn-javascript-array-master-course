@@ -282,3 +282,21 @@ const reverseName = names.reverse();
 console.log(reverseName); // ['Bikash', 'Rayhan', 'Anik']
 */
 // Note : reverse () mutable method
+
+// sort () method :
+
+const names = ["anik", "sonatan", "bikash", "rayhan"];
+console.log(names); //  ['anik', 'sonatan', 'bikash', 'rayhan']
+// const namesReverse = names.sort();
+// console.log(namesReverse); // ['anik', 'bikash', 'rayhan', 'sonatan']
+
+// const namesReverse = names.sort((a, b) => (a === b ? 0 : b > a ? -1 : 1));
+// console.log(namesReverse);
+
+const numbers = [1, 5, 4, 6, 8, 11, 6, 5, 11, 1, 2];
+console.log(numbers); // [1, 5, 4, 6, 8, 11, 6, 5, 11, 1, 2]
+const numberShort = numbers.sort((a, b) => a - b);
+
+console.log(numberShort); // [1, 1, 2, 4, 5, 5, 6, 6, 8, 11, 11]
+const numberShort1 = numbers.sort((a, b) => b - a);
+console.log(numberShort1); // [11, 11, 8, 6, 6, 5, 5, 4, 2, 1, 1]
