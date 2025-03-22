@@ -219,3 +219,17 @@ const mergeAgain = num1.concat(num2, num3);
 console.log(mergeAgain); //  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 */
 
+/*
+// join () method :
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers); // [1, 2, 3, 4, 5, 6]
+const join = numbers.join();
+console.log(join); // 1,2,3,4,5,6
+const joinAgain = numbers.join("$ ");
+console.log(joinAgain); // 1$ 2$ 3$ 4$ 5$ 6
+
+// Note : when we use join method in empty array then join method always return empty string ('')
+//  Exmple :
+console.log([].join("$")); //  ''
+*/
+
