@@ -78,3 +78,18 @@ console.log(Array.isArray("Sonatan")); // false
 console.log(Array.isArray(10)); // false
 console.log(Array.isArray([])); // True
 */
+
+// Array Destructuring in JavaScript
+
+const friends = ["Anik", "Asraful", "Rayhan"];
+console.log(friends); // ['Anik', 'Asraful', 'Rayhan']
+
+/*
+const anik = friends[0];
+const asraful = friends[1];
+const rayhan = friends[2];
+console.log(anik, asraful, rayhan); // Anik Asraful Rayhan
+*/
+
+const [anik, asraful, rayhan] = friends;
+console.log(anik, asraful, rayhan); // Anik Asraful Rayhan
