@@ -336,10 +336,27 @@ console.log(rightSide); // rayhan
 // if we use many nested array then using argument like 1,2,3,4,Infinity
 
 const num1 = [1, 2, 3, [4, 5, [6, 7]]];
-console.log(num1); //  [1, 2, 3, Array(3)]
+// console.log(num1); //  [1, 2, 3, Array(3)]
 const num1Flat = num1.flat(2);
-console.log(num1Flat); // [1, 2, 3, 4, 5, 6, 7]
+// console.log(num1Flat); // [1, 2, 3, 4, 5, 6, 7]
 
 const num2 = [1, 2, 3, [4, 5, [6, 7, [8]]]];
 const num2Flat = num2.flat(Infinity);
-console.log(num2Flat); // [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(num2Flat); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// copyWithIn () method :
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(numbers); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+const copyWithInNumber = numbers.copyWithin(0, 3, 5);
+// console.log(copyWithInNumber); // [4, 5, 3, 4, 5, 6, 7, 8]
+
+// with() method:
+// update element immutabliy
+// with method work postive index and negetive index ,, left side postive and right side negetvie and start index 1
+
+const number = [1, 2, 3, 4, 5, 6];
+const threeUpdate = number.with(2, 8);
+// console.log(threeUpdate); // [1, 2, 8, 4, 5, 6]
+const fiveUpdate = number.with(-2, 10);
+// console.log(fiveUpdate); // [1, 2, 3, 4, 10, 6]
