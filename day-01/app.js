@@ -284,7 +284,7 @@ console.log(reverseName); // ['Bikash', 'Rayhan', 'Anik']
 // Note : reverse () mutable method
 
 // sort () method :
-
+/*
 const names = ["anik", "sonatan", "bikash", "rayhan"];
 console.log(names); //  ['anik', 'sonatan', 'bikash', 'rayhan']
 // const namesReverse = names.sort();
@@ -300,3 +300,16 @@ const numberShort = numbers.sort((a, b) => a - b);
 console.log(numberShort); // [1, 1, 2, 4, 5, 5, 6, 6, 8, 11, 11]
 const numberShort1 = numbers.sort((a, b) => b - a);
 console.log(numberShort1); // [11, 11, 8, 6, 6, 5, 5, 4, 2, 1, 1]
+*/
+
+// splice method :
+
+const names = ["tom", "jerry", "tapas", "paul", "bob"];
+console.log(names); // ['tom', 'jerry', 'tapas', 'paul', 'bob']
+const deleteNames = names.splice(1, 3);
+console.log(deleteNames); // ['jerry', 'tapas', 'paul']
+console.log(names); // ['tom', 'bob']
+
+const updateDelete = names.splice(1, 0, "sonatan", "anik", "asraful");
+console.log(updateDelete); // []
+console.log(names); //  ['tom', 'sonatan', 'anik', 'asraful', 'bob']
