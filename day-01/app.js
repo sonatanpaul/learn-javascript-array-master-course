@@ -304,6 +304,7 @@ console.log(numberShort1); // [11, 11, 8, 6, 6, 5, 5, 4, 2, 1, 1]
 
 // splice method :
 
+/*
 const names = ["tom", "jerry", "tapas", "paul", "bob"];
 console.log(names); // ['tom', 'jerry', 'tapas', 'paul', 'bob']
 const deleteNames = names.splice(1, 3);
@@ -313,3 +314,32 @@ console.log(names); // ['tom', 'bob']
 const updateDelete = names.splice(1, 0, "sonatan", "anik", "asraful");
 console.log(updateDelete); // []
 console.log(names); //  ['tom', 'sonatan', 'anik', 'asraful', 'bob']
+*/
+
+// Array at() method :
+// note : array at method works negetive and postitve , negetive index work right side and postive index work right side
+/*
+const names = ["paul", "anik", "asraful", "rayhan", "tom", "jerry"];
+const leftSide = names.at(2);
+console.log(leftSide); // asraful
+const rightSide = names.at(-3);
+console.log(rightSide); // rayhan
+*/
+
+// flat () method :
+
+// const numbers = [1, 2, 3, 4, 5, [6, 7]];
+// console.log(numbers); //  [1, 2, 3, 4, 5, Array(2)]
+// const flatNumbers = numbers.flat();
+// console.log(flatNumbers); // [1, 2, 3, 4, 5, 6, 7]
+// note : when we nested array using flat method work 1 level,,
+// if we use many nested array then using argument like 1,2,3,4,Infinity
+
+const num1 = [1, 2, 3, [4, 5, [6, 7]]];
+console.log(num1); //  [1, 2, 3, Array(3)]
+const num1Flat = num1.flat(2);
+console.log(num1Flat); // [1, 2, 3, 4, 5, 6, 7]
+
+const num2 = [1, 2, 3, [4, 5, [6, 7, [8]]]];
+const num2Flat = num2.flat(Infinity);
+console.log(num2Flat); // [1, 2, 3, 4, 5, 6, 7, 8]
