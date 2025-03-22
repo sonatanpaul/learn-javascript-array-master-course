@@ -140,3 +140,15 @@ console.log(num1); // 1
 console.log(num2); // 2
 console.log(rest); // [3, 4, 5, 6, 7, 8]
 */
+
+// Spread Parameterr :
+
+/*
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(numbers); // [1, 2, 3, 4, 5, 6, 7, 8]
+const copyNumbers = [...numbers];
+console.log(copyNumbers); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+console.log(numbers === copyNumbers); // false
+*/
+// note: when we use spread operater , spread opareter return new value
