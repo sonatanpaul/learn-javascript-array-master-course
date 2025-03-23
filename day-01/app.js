@@ -482,3 +482,22 @@ const seniorCitizen = customers.filter((customer) => customer.age >= 60);
 // console.log(seniorCitizen); // return (2) [{…}, {…}]
 const nonSeniorCitizen = customers.filter((customer) => customer.age < 60);
 // console.log(nonSeniorCitizen); // return (3) [{…}, {…}, {…}]
+
+// map() method
+{
+  // map example - Build Customer Data with title and full name
+  const customersWithFullName = customers.map((customer) => {
+    let title = "";
+    if (customer.gender === "M") {
+      title = "Mr.";
+    } else if (customer.gender === "F" && customer.married) {
+      title = "Mrs.";
+    } else {
+      title = "Miss";
+    }
+    customer["full_name"] =
+      title + " " + customer.f_name + " " + customer.l_name;
+    return customer;
+  });
+  console.log("[map] Customers With Full Name = ", customersWithFullName);
+}
