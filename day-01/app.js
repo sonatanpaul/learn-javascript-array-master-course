@@ -368,3 +368,14 @@ const fiveUpdate = number.with(-2, 10);
 // console.log(Array.isArray("sonatan")); // false
 // console.log(Array.isArray({})); // false
 // console.log(Array.isArray(5)); // false
+
+// Array.of(): create Array :
+// literals way
+const arr1 = [1, 2, 3, 4, 5];
+// console.log(arr1); // [1, 2, 3, 4, 5]
+// new keyword way
+const arr2 = new Array(1, 2, 3, 4, 5, 6, 7, 8);
+// console.log(arr2); // [1, 2, 3, 4, 5, 6, 7, 8]
+// array.of method
+const arr3 = Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
+// console.log(arr3); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
