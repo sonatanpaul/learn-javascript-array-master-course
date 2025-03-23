@@ -379,3 +379,42 @@ const arr2 = new Array(1, 2, 3, 4, 5, 6, 7, 8);
 // array.of method
 const arr3 = Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
 // console.log(arr3); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// Array.from and Array.fromAsync
+/*
+// Array Like
+{
+    const array_like = {
+        0: 'A',
+        1: 'B',
+        2: 'C',
+        length : 3
+    }
+    
+    array_like[1]
+    
+    Array.from(array_like)
+  
+    document.getElementsByTagName('li')
+  
+    function checkArgs() {
+      console.log(arguments.length);// logs 2.
+    }
+  }
+  
+  // Array.from()
+  {
+    const collection = Array.from(document.getElementsByTagName('li'))
+  }
+  
+  // Array.fromAsync()
+  {
+      Array.fromAsync({
+      length: 3,
+      0: Promise.resolve('tapaScript'),
+      1: Promise.resolve('Google'),
+      2: Promise.resolve('Apple'),
+    }).then((array) => console.log(array));
+  }
+  */
+
