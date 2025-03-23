@@ -501,3 +501,24 @@ const nonSeniorCitizen = customers.filter((customer) => customer.age < 60);
   });
   console.log("[map] Customers With Full Name = ", customersWithFullName);
 }
+
+// reduce() method
+{
+  // reduce example - Get the Average Age of
+  // Customers who purchased 'Book'
+  let count = 0;
+  const total = customers.reduce(
+    (accumulator, customer, currentIndex, array) => {
+      if (customer.purchased.includes("Book")) {
+        accumulator = accumulator + customer.age;
+        count = count + 1;
+      }
+      return accumulator;
+    },
+    0
+  );
+  console.log(
+    "[reduce] Customer Avg age Purchased Book:",
+    Math.floor(total / count)
+  );
+}
