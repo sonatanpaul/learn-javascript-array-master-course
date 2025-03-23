@@ -360,3 +360,11 @@ const threeUpdate = number.with(2, 8);
 // console.log(threeUpdate); // [1, 2, 8, 4, 5, 6]
 const fiveUpdate = number.with(-2, 10);
 // console.log(fiveUpdate); // [1, 2, 3, 4, 10, 6]
+
+// Array Static Method
+// Array.isArray() method :
+
+// console.log(Array.isArray([])); //  true
+// console.log(Array.isArray("sonatan")); // false
+// console.log(Array.isArray({})); // false
+// console.log(Array.isArray(5)); // false
